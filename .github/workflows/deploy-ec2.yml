@@ -35,9 +35,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: ${{ secrets.EC2_PORT}}
           script: |
-            sudo apt update
-            sudo apt upgrade
-            sudo apt install docker.io
             sudo apt  install podman-docker 
             sudo docker pull safal7120/frontend:latest
             sudo docker stop frontend || trues
