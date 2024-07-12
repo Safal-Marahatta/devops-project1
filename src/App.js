@@ -18,7 +18,7 @@ function App() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to submit data');
+        throw new Error('sorry Failed to submit data');
       }
 
       setSubmitted(true);
