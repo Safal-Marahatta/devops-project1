@@ -21,6 +21,9 @@ EXPOSE 80
 # Use lightweight Nginx image for serving static files
 FROM nginx:alpine
 
+# Define the directory as a volume
+VOLUME /usr/share/nginx/html
+
 # Copy build files from the previous stage
 COPY --from=build /app/build /usr/share/nginx/html
 
