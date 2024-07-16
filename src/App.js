@@ -9,7 +9,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://54.255.113.106:3001/api/submit', {
+      const response = await fetch('http://api_safal.learn.cloudlaya.com/api/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
