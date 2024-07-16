@@ -24,7 +24,7 @@ function App() {
       setSubmitted(true);
       setName('');
     } catch (error) {
-      console.error('Error submitting data:', error);
+      console.error('Error submitting the data:j', error);
     }
   };
 
