@@ -40,4 +40,4 @@ jobs:
             sudo docker rm frontend || true
             sudo docker run -d --name frontend -p 3000:80 safal7120/frontend:latest
             # sudo docker run -d --name frontend --network=host safal7120/frontend:latest
-            echo "It is completed succesfully" 
+            echo "It is completed succesfully"  
