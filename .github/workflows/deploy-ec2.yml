@@ -38,6 +38,6 @@ jobs:
             sudo docker pull safal7120/frontend:latest
             sudo docker stop frontend || true
             sudo docker rm frontend || true
-            sudo docker run -d --name frontend -v /var/www/frontend:/usr/share/nginx/html safal7120/frontend:latest
+            sudo docker run -d --name frontend --network=host safal7120/frontend:latest
             # sudo docker run -d --name frontend --network=host safal7120/frontend:latest
             echo "It is completed succesfully"
