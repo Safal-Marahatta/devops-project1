@@ -50,7 +50,7 @@ function App() {
           <button type="submit">Submit</button>
         </form>
 
-        {submitted && <p>Data submitted successfully!</p>}
+        {submitted && <p>Data submitted successfully k!</p>}
       </header>
     </div>
   );
