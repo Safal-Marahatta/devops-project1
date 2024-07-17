@@ -27,8 +27,8 @@ FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 
 #############
-COPY ./nginx_conf/nginx.conf /etc/nginx/nginx.conf
-COPY ./nginx_conf/default.conf /etc/nginx/conf.d/default.conf
+# COPY ./nginx_conf/nginx.conf /etc/nginx/nginx.conf
+# COPY ./nginx_conf/default.conf /etc/nginx/conf.d/default.conf
 ##############
 
 # Expose port 80
